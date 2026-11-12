@@ -12,7 +12,7 @@ cask "20-20-20" do
     strategy :github_latest
   end
 
-  depends_on macos: :sonoma
+  depends_on macos: :tahoe
 
   app "20-20-20.app"
 
