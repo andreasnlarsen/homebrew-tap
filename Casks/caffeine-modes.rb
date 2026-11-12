@@ -1,6 +1,6 @@
 cask "caffeine-modes" do
-  version "1.2.0"
-  sha256 "a00d35d29e1d5bc11f6cc1107bb0bce33487d66b673bd3074da237af56edd368"
+  version "1.2.1"
+  sha256 "cdd730c0180e667d57fa01eebd979432f9756f9d14f7adda0d95f7ca3ad3a342"
 
   url "https://github.com/andreasnlarsen/caffeine-modes/releases/download/v#{version}/Caffeine-Modes-#{version}.dmg"
   name "Caffeine Modes"
