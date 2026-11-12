@@ -16,13 +16,14 @@ cask "20-20-20" do
 
   app "20-20-20.app"
 
-  # Opening the app once makes it hand itself to launchd, which keeps it running.
-  postflight do
-    system_command "/usr/bin/open", args: ["#{appdir}/20-20-20.app"]
-  end
-
   uninstall launchctl: "com.andreaslar.twenty-twenty-twenty",
             quit:      "com.andreaslar.twenty-twenty-twenty"
 
   zap trash: "~/Library/Application Support/20-20-20"
+
+  caveats <<~EOS
+    Open 20-20-20 once to start it. From then on it starts at login by itself:
+      open "#{appdir}/20-20-20.app"
+    Do the same after an upgrade.
+  EOS
 end
