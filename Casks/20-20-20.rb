@@ -1,6 +1,6 @@
 cask "20-20-20" do
-  version "1.0.0"
-  sha256 "816754a5ce0ab8d61540730c9aa977688e116293f12e5464bf314fcbaed32535"
+  version "1.0.1"
+  sha256 "a80bd3346c2e72910d672b83074d9d22d4d571ddc1ee1efb10a024b65be2f677"
 
   url "https://github.com/andreasnlarsen/20-20-20/releases/download/v#{version}/20-20-20-#{version}.zip"
   name "20-20-20"
